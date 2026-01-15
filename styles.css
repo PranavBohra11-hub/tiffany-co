@@ -208,6 +208,7 @@ input[type="Checkbox"] {
 }
 
 
+
 .Hero {
   border: 1px solid transparent;
   height: 80vh;
@@ -248,6 +249,142 @@ input[type="Checkbox"] {
   height: 100%;
   position: absolute;
   background-color: rgba(23, 23, 23, 0.473);
+}
+
+.Gift-section {
+  border: 1px solid green;
+}
+
+.Head {
+  border: 1px solid transparent;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Item1,
+.Item2,
+.Item3,
+.Item4,
+.Item5,
+.Item6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Item1 {
+  background-image: url(https://press.tiffany.com/wp-content/uploads/70353040_NL_H23_v1_TM_092023_RGB_ALT_4x5-730x600.jpg);
+}
+
+.Item2 {
+  background-image: url(https://www.wallpapergap.com/cdn/24/260/tiffany-and-co-wallpaper-jewelry-heart-1024x768.jpg);
+}
+
+.Item3 {
+  background-image: url(https://media.tiffany.com/is/image/tco/2025_ENGAGEMENTRING_LP_7x5_06_SFCC);
+}
+
+.Item4 {
+  background-image: url(https://media.tiffany.com/is/image/tco/2025_VDAY_BG_ENGAGEMENTRINGS_Mobile_SFCC);
+}
+
+.Item5 {
+  background-image: url(https://tse4.mm.bing.net/th/id/OIP.KxJxzs55THcUiH3Hi78BAAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3);
+}
+
+.Item6 {
+  background-image: url(https://media.tiffany.com/is/image/tco/BridalEarring-BG-Hero-Mobile);
+}
+
+@media (max-width: 768px) {
+  .Item {
+    border: 2px solid rgba(128, 128, 128, 0.594);
+    height: 350px;
+    width: 80%;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.208);
+  }
+
+  .Gift-Items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Item {
+    border: 2px solid rgba(128, 128, 128, 0.594);
+    height: 350px;
+    width: 350px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.208);
+  }
+
+  .Gift-Items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+}
+
+.BottomHeading {
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(232, 232, 232, 0.774);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 0.6s ease all;
+}
+
+.BottomHeading:hover {
+  font-size: 20px;
+  height: 60px;
+  transition: 0.6s ease all;
+}
+
+.BoxSlide {
+  border: 1px solid transparent;
+  height: 100%;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: 0.6s ease all;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Item:hover .BoxSlide {
+  transform: translateY(0%);
+  transition: 0.6s ease all;
+}
+
+.SliderMatter img {
+  width: 50%;
+  height: 150px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+}
+
+.SliderMatter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,4 +622,12 @@ input[type="Checkbox"] {
 .FinalLine {
   font-size: 16px;
   font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.SlideContent {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 80%;
+  transform: translateY(70px);
 }
