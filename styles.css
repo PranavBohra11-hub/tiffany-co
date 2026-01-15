@@ -208,6 +208,7 @@ input[type="Checkbox"] {
 }
 
 
+
 .Hero {
   border: 1px solid transparent;
   height: 80vh;
@@ -456,7 +457,21 @@ input[type="Checkbox"] {
   }
 }
 
+.Footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .footer-section {
+    background-color: rgba(250, 235, 215, 0.801);
+    padding: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+
   .Item {
     border: 2px solid rgba(128, 128, 128, 0.594);
     height: 350px;
@@ -1101,5 +1116,41 @@ input[type="email"] {
 
 .map {
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    background-color: rgba(250, 235, 215, 0.801);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+.Footer div {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.Footer ul li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.Footer ul li:hover {
+  text-decoration: underline;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+}
+
+.Logo img {
+  width: 200px;
+  height: 100px;
 }
 
